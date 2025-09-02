@@ -23,13 +23,15 @@
   .result-badge{background:var(--badge);padding:22px;border-radius:12px;text-align:center;border:1px dashed rgba(0,0,0,0.06)}
   .roast{font-size:18px;font-weight:600;margin-top:10px;color:#b91c1c}
   footer{margin-top:32px;text-align:center;color:var(--muted);font-size:13px}
+  .telegram-link{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:8px}
+  .telegram-link img{width:16px;height:16px}
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <h1>How Precious Am I?</h1>
-      <p class="lead">Answer a few questions and discover your *true preciousness* ✨</p>
+      <p class="lead">Answer a few questions and discover your true preciousness ✨</p>
     </header>
 
     <main class="card">
@@ -42,7 +44,7 @@
           <option value="Sleeping">Sleeping</option>
           <option value="Gym">Gym / Fitness</option>
           <option value="Shopping">Shopping random stuff</option>
-          <option value="Insta">Insta scrolling</option>
+          <option value="Insta">Instagram scrolling</option>
           <option value="Chess">Playing Chess</option>
         </select>
 
@@ -68,13 +70,13 @@
         <select id="hangout">
           <option value="Club">Club / Party</option>
           <option value="Library">Library</option>
-          <option value="Basement">Basement </option>
+          <option value="Basement">Basement</option>
           <option value="Gym">Gym</option>
           <option value="Bed">Literally my bed</option>
         </select>
 
         <div class="actions">
-          <button type="button" id="checkBtn">Check how Precious You Are</button>
+          <button type="button" id="checkBtn">Check How Precious You Are</button>
         </div>
       </form>
 
@@ -88,6 +90,11 @@
 
     <footer>
       <div class="small">⚠️ Disclaimer: This site is pure satire. If you expected validation, that's on you.</div>
+      <div class="small">Developed by Ansh</div>
+      <div class="telegram-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram Logo"/>
+        <span>@highoncodes</span>
+      </div>
     </footer>
   </div>
 
@@ -98,36 +105,36 @@
   const result = document.getElementById('result');
 
   const roastLines = {
-    Cinema: "Your Cinema Might be Good as a Unemployed nga but remember you are worthless.",
-    Gaming: "Gaming? Bitch Touch Grass.",
-    Coding: "Coding? lol Copy Pasting aint coding lil bro.",
-    Sleeping: "Sleeping? Sybau Lil Dawg💔🙏🏻.",
-    Gym: "Gym rat? Precious? Stop Wasting your fcking parents money nga.",
-    Shopping: "Shopping as a hobby? You’re just a walking credit card debt.",
-    Insta: "Insta? Scrolling in big 25💔🥀.",
-    Chess: "Chess? nga you even know how tf a knight moves💔🙏🏻. "
+    Cinema: "Cinema? Might as well be an unemployed dude, still worthless.",
+    Gaming: "Gaming? Touch some grass.",
+    Coding: "Coding? Copy-pasting isn’t coding, little bro.",
+    Sleeping: "Sleeping? Stay broke, lil dawg 💔🙏🏻.",
+    Gym: "Gym rat? Precious? Stop wasting your parents’ money.",
+    Shopping: "Shopping as a hobby? You’re just walking credit card debt.",
+    Insta: "Instagram scrolling at 25? Tragic 💔🥀.",
+    Chess: "Chess? Do you even know how a knight moves? 💔🙏🏻."
   };
 
   const foodRoasts = {
-    Pizza: "Pineapple on Pizza tastes Better btw.",
-    Noodles: "Stop Eating Chinese shit.",
-    Burger: "Burger? Sybau Wannabe American nga.",
-    Salad: "Bitch Touch Grass Instead of Eating.",
-    IceCream: "Ice cream as comfort food? Therapy called, they’re cheaper."
+    Pizza: "Pineapple on pizza tastes better, by the way.",
+    Noodles: "Stop eating instant noodles every night.",
+    Burger: "Burger? Wannabe American, huh?",
+    Salad: "Eat grass instead of touching it?",
+    IceCream: "Ice cream as comfort food? Therapy is cheaper."
   };
 
   const petRoasts = {
     Dog: "Dog person? Congrats, you signed up for unpaid poop duty.",
     Cat: "Cat person? Precious until your overlord decides you’re furniture.",
-    Snake: "Snake? Bro, even your pet wants you dead.",
-    Rock: "A pet rock? Ah yes, emotional support gravel.",
-    None: "No pet? You are literally companionship’s version of airplane mode."
+    Snake: "Snake? Even your pet wants you dead.",
+    Rock: "A pet rock? Emotional support gravel, nice.",
+    None: "No pet? You’re literally companionship on airplane mode."
   };
 
   const hangoutRoasts = {
-    Club: "Club? Born Rich Dawg.",
-    Library: "Library? JEE/NEET not for you Dumbass.",
-    Basement: "wWho oiling you up in  Basement💀",
+    Club: "Club? Born rich, huh?",
+    Library: "Library? JEE/NEET isn’t for you, genius.",
+    Basement: "Who’s oiling you up in the basement? 💀",
     Gym: "Gym hangout? We get it bro, you lift. Nobody cares.",
     Bed: "Bed? Precious? You’re just a horizontal disappointment."
   };
@@ -139,7 +146,7 @@
     const hangout = document.getElementById('hangout').value;
 
     const roast = [
-    "Get a J*B, You Unemplyed Shit.",
+      "Get a job, you unemployed clown.",
       roastLines[hobby],
       foodRoasts[food],
       petRoasts[pet],
